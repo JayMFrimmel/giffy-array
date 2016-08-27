@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Giffy Game</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!--public beta key "dc6zaTOxFJmzC”-->
+<!-- <img src="" data-still="" data-animate="" data-state="" class=""> -->
+
+<!-- public key https://github.com/Giphy/GiphyAPI#overview -->
+
+</head>
+
+<body>
+	<header>
+		<h1>Crazy GIF's: Total Time-Wasters</h1>
+		<br>
+		<h2>Party Animals ... First for Your Enjoyment</h2>
+
+		<p>To activate: click on an image to see the crazy way the critter has fun. Click again to make it stop.
+		<br>
+		Whew, where do they get so much energy?!</p>
+	</header>
+
+
+
+	<img src="https://media.giphy.com/media/V6mUadvPgUhzy/giphy.gif" data-still="http://media1.giphy.com/media/3o85xkQpyMlnBkpB9C/200_s.gif" data-animate="http://media1.giphy.com/media/3o85xkQpyMlnBkpB9C/200_s.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/xT8qBie2kASj2R3QD6/giphy.gif" data-still="https://media.giphy.com/media/xT8qBie2kASj2R3QD6/giphy.gif" data-animate="https://media.giphy.com/media/xT8qBie2kASj2R3QD6/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/crton9D1rYinS/giphy.gif" data-still="https://media.giphy.com/media/crton9D1rYinS/giphy.gif" data-animate="https://media.giphy.com/media/crton9D1rYinS/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/xITOFYCXsbQM8/giphy.gif" data-still="https://media.giphy.com/media/xITOFYCXsbQM8/giphy.gif" data-animate="https://media.giphy.com/media/xITOFYCXsbQM8/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/b7F5qj5Fqu4aQ/giphy.gif" data-still="https://media.giphy.com/media/b7F5qj5Fqu4aQ/giphy.gif" data-animate="https://media.giphy.com/media/b7F5qj5Fqu4aQ/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/y8HcigYaN44lG/giphy.gif" data-still="https://media.giphy.com/media/y8HcigYaN44lG/giphy.gif" data-animate="https://media.giphy.com/media/y8HcigYaN44lG/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/12JtN8cJx6tP2w/giphy.gif" data-still="https://media.giphy.com/media/12JtN8cJx6tP2w/giphy.gif" data-animate="https://media.giphy.com/media/12JtN8cJx6tP2w/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/1107jkZv60UDni/giphy.gif" data-still="https://media.giphy.com/media/1107jkZv60UDni/giphy.gif" data-animate="https://media.giphy.com/media/1107jkZv60UDni/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/6mSxWeJvE5vAk/giphy.gif" data-still="https://media.giphy.com/media/6mSxWeJvE5vAk/giphy.gif" data-animate="https://media.giphy.com/media/6mSxWeJvE5vAk/giphy.gif" data-state="still" class="partyAnimals">
+
+	<img src="https://media.giphy.com/media/EktbegF3J8QIo/giphy.gif" data-still="https://media.giphy.com/media/EktbegF3J8QIo/giphy.gif" data-animate="https://media.giphy.com/media/EktbegF3J8QIo/giphy.gif" data-state="still" class="partyAnimals">
+
+	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+    	<script type="text/javascript">
+	    	$('.partyAnimals').on('click', function(){
+
+	    var state = $(this).attr('data-state');  
+
+	    if ( state == 'still'){
+                $(this).attr('src', $(this).data('animate'));
+                $(this).attr('data-state', 'animate');
+            }else{
+                $(this).attr('src', $(this).data('still'));
+                $(this).attr('data-state', 'still');
+            };
+	</script>
+</body>
+</html>
+
+
+
